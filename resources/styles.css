@@ -113,15 +113,15 @@ body {
     justify-content: center;
     align-items: center;
     width: 300px;
-    background-color: var(--cart-purple);
+    background-color: var(--menu-gray);
     height: 100%;
     text-align: center;
-    transition: transform 0.1s linear;
+    transition: background-color 0.2s linear;
 }
 
 .cart-btn:hover {
     cursor: pointer;
-    transform: scale(1.1);
+    background-color: var(--cart-purple);
 }
 
 .cart-btn i {
@@ -406,6 +406,10 @@ body {
     transition: transform 0.1s linear;
 }
 
+.offer-card:hover {
+    cursor: pointer;
+}
+
 .hidden-left-offer {
     transform: translateX(-100%);
     position: absolute;
@@ -654,6 +658,7 @@ body {
 
 .device-card:hover {
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 .device-card-top {

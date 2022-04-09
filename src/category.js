@@ -148,44 +148,85 @@ class App {
         this.maxPrice;
         this.selectedBrandNames = new Set();
 
-
+        this.allShopItems;
     }
 
 
     getAllItems() {
-        this.http.get('https://pc-shop-api.herokuapp.com/items')
-            .then(data => this.ui.fillMain(data))
-            .catch(err => console.log(err));
+        // fetch from API only if data is not available - Reduced API calls
+        if (!this.allShopItems) {
+            this.http.get(`${API}/items`)
+                .then(data => this.ui.fillMain(data))
+                .catch(err => console.log(err));
+        } else {
+            this.ui.fillMain(this.allShopItems);
+        }
+
+
+
+
+
     }
 
 
     // Filter out items and display only user needed items
     getItemsByFilter() {
-        this.http.get('https://pc-shop-api.herokuapp.com/items')
-            .then(items => {
-                items = items.filter(item => {
-                    if (item.price >= this.minPrice && item.price <= this.maxPrice) {
-                        return true
-                    } else {
-                        return false;
-                    }
-                })
-
-                // this filter only works if user has selected at least one brand name - otherwise all brands are visible
-                if (this.selectedBrandNames.size !== 0) {
+        // Fetch from API only if data is not avaiable
+        if (!this.allShopItems) {
+            // This thing has been copy pasted in the else block just items array is equal to this.allShopItems (save api calls)
+            this.http.get(`${API}/items`)
+                .then(items => {
                     items = items.filter(item => {
-                        if (this.selectedBrandNames.has(item.brand)) {
-                            return true;
+                        if (item.price >= this.minPrice && item.price <= this.maxPrice) {
+                            return true
                         } else {
                             return false;
                         }
                     })
+
+                    // this filter only works if user has selected at least one brand name - otherwise all brands are visible
+                    if (this.selectedBrandNames.size !== 0) {
+                        items = items.filter(item => {
+                            if (this.selectedBrandNames.has(item.brand)) {
+                                return true;
+                            } else {
+                                return false;
+                            }
+                        })
+                    }
+
+                    this.ui.fillMain(items)
+
+                })
+                .catch(err => console.log(err));
+
+        } else {
+
+            let items = Array.from(this.allShopItems);
+            items = items.filter(item => {
+                if (item.price >= this.minPrice && item.price <= this.maxPrice) {
+                    return true
+                } else {
+                    return false;
                 }
-
-                this.ui.fillMain(items)
-
             })
-            .catch(err => console.log(err));
+
+            // this filter only works if user has selected at least one brand name - otherwise all brands are visible
+            if (this.selectedBrandNames.size !== 0) {
+                items = items.filter(item => {
+                    if (this.selectedBrandNames.has(item.brand)) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                })
+            }
+
+            this.ui.fillMain(items)
+
+        }
+
+
     }
 
 
@@ -200,7 +241,7 @@ class App {
                 this.cart.addItem(itemID, 1);
 
                 // Updating the cart value
-                this.setCartValue();
+                this.cart.setCartValue(this.cart.getTotal(this.allShopItems));
 
                 this.ui.createNotification('Added to Cart');
             }
@@ -212,7 +253,7 @@ class App {
         minScrollUI.addEventListener('change', () => {
 
             // Set the label value
-            document.querySelector(this.uiElements.slideMinLabelUI).textContent = `Maximum Price: ${minScrollUI.value} LKR`;
+            document.querySelector(this.uiElements.slideMinLabelUI).textContent = `Minimum Price: ${minScrollUI.value} LKR`;
 
             // Set class Min/Max value
             this.minPrice = parseInt(minScrollUI.value);
@@ -254,20 +295,23 @@ class App {
 
     }
 
-
+    // sets the cart value on top right at the startup
     setCartValue() {
-        this.http.get('https://pc-shop-api.herokuapp.com/items')
+        this.http.get(`${API}/items`)
             .then((data) => {
+                // For reduce the number of API calls
+                this.allShopItems = data;
                 this.cart.setCartValue(this.cart.getTotal(data));
             })
     }
 
-
+    // sets min and max values
     setMinMax(min, max) {
         this.minPrice = min;
         this.maxPrice = max;
     }
 
+    // Initialize 
     init() {
         this.setCartValue();
         this.getAllItems();

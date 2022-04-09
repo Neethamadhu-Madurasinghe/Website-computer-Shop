@@ -1,8 +1,11 @@
+// const API = 'http://localhost:3000';
+const API = 'https://pc-shop-api.herokuapp.com';
 class Cart {
     constructor() {
         this.http = new HTTP();
         this.cartUI = new CartUI(this);
         this.globe_total = 0;
+        this.AllItems;
     }
 
     // Add a new item (an item ID)to the local storage
@@ -68,13 +71,23 @@ class Cart {
 
     buildCart() {
         // get the cart items from lc and all items details from api then pass them to CartUI to make GUI
-        this.http.get('https://pc-shop-api.herokuapp.com/items')
-            .then((data) => {
-                // Remove main part
-                document.querySelector('.most-main-container').classList.add('hidden-main');
-                return this.cartUI.makeCart(data, this.getItemList());
+        // Only executes once - fetch and store all data locally
+        if (!this.AllItems) {
+            this.http.get(`${API}/items`)
+                .then((data) => {
+                    this.AllItems = data;
 
-            })
+                    // Remove main part
+                    document.querySelector('.most-main-container').classList.add('hidden-main');
+                    this.cartUI.makeCart(data, this.getItemList());
+
+                });
+
+        } else {
+            document.querySelector('.most-main-container').classList.add('hidden-main');
+            this.cartUI.makeCart(this.AllItems, this.getItemList());
+        }
+
 
     }
 

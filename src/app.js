@@ -107,7 +107,7 @@ class UI {
                         return offerRecord
                     }
                 })
-                .forEach((offerRecord, index) => {
+                .forEach((offerRecord) => {
                     console.log(offerRecord.image);
                     const offerCardUI = document.createElement('div');
                     offerCardUI.className = "offer-card";
@@ -185,6 +185,7 @@ class APP {
         this.ui = ui;
         this.cart = cart;
         this.uiElements = ui.getUIElements();
+        this.allShopItems;
     }
 
     setEventListners() {
@@ -230,7 +231,7 @@ class APP {
                 this.cart.addItem(itemID, 1);
 
                 // Updating the cart value
-                this.setCartValue();
+                this.cart.setCartValue(this.cart.getTotal(this.allShopItems));
 
                 // Make notification
                 this.ui.createNotification('Added to Cart');
@@ -243,22 +244,23 @@ class APP {
 
 
     getNews() {
-        this.http.get('https://pc-shop-api.herokuapp.com/news')
+        this.http.get(`${API}/news`)
             .then(data => this.ui.fillNews(data))
             .catch(err => console.log(err));
     }
 
 
     getSpecialOffers() {
-        this.http.get('https://pc-shop-api.herokuapp.com/items')
+        this.http.get(`${API}/items`)
             .then(data => this.ui.fillSpecialOffers(data))
             .catch(err => console.log(err));
     }
 
 
     setCartValue() {
-        this.http.get('https://pc-shop-api.herokuapp.com/items')
+        this.http.get(`${API}/items`)
             .then((data) => {
+                this.allShopItems = data;
                 this.cart.setCartValue(this.cart.getTotal(data));
             })
     }
