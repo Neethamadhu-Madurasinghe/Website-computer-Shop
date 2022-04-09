@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800&family=Heebo&family=Montserrat:wght@600&family=Open+Sans:wght@500&family=Roboto:wght@400;700&display=swap');
+:root {
+    --dark-purple: rgba(116, 46, 162, 0.8);
+    --light-gray: rgba(199, 208, 216, 0.2);
+    --menu-gray: rgba(182, 72, 255, 0.4);
+    --card-title-purple: rgba(182, 72, 255, 0.7);
+    --cart-purple: rgba(182, 72, 255, 1);
+    --offer-purple: rgba(182, 72, 255, 0.9);
+    --offer-purple-hover: rgba(182, 72, 255, 0.5);
+    --menu-item-purple: rgba(182, 72, 255, 0.7);
+    --logo-pink: #ff0099;
+    --background-purple: rgba(12, 0, 50, 255);
+    --shopping-cart-background: rgba(40, 15, 56, 0.97);
+    --shopping-cart-item: rgba(116, 46, 162, 0.5);
+}
+
+* {
+    /* this makes total size = size + padding + boarder */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 100vw;
+    background-image: url('background.jpg');
+    background-color: var(--background-purple);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    overflow-x: hidden;
+}
+
+
+/* Top section */
+
+.top-section {
+    user-select: none;
+    height: 10vh;
+    min-height: 75px;
+    background-color: var(--light-gray);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-section nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    font-size: 20px;
+    display: flex;
+}
+
+.nav-list li {
+    transition: transform 0.1s linear;
+}
+
+.nav-list li:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.nav-list li a {
+    transition: color 0.1s linear;
+}
+
+.nav-list li a:active {
+    color: black;
+}
+
+.logo {
+    min-width: 280px;
+    text-align: center;
+    transition: transform 0.1s linear;
+}
+
+.logo:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.logo a {
+    font-family: 'Big Shoulders Display';
+    font-size: 3rem;
+    font-weight: 900;
+    text-shadow: 1px 1px 100px rgb(251, 67, 238), 1px 1px 10px var(--logo-pink);
+    color: var(--logo-pink);
+    text-decoration: none;
+}
+
+.nav-list li {
+    list-style: none;
+    margin: auto 2vw;
+}
+
+.nav-list li a {
+    text-decoration: none;
+}
+
+.cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    background-color: var(--cart-purple);
+    height: 100%;
+    text-align: center;
+    transition: transform 0.1s linear;
+}
+
+.cart:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.cart i {
+    font-size: 2rem;
+    color: black;
+}
+
+.cart p {
+    font-size: 1.75rem;
+    margin-right: 12px;
+    color: black;
+    font-weight: bolder;
+}
+
+
+/* bottom section  */
+
+.bottom-section {
+    min-height: calc(100vh - 75px);
+    display: flex;
+}
+
+.main-menu {
+    user-select: none;
+    min-width: 280px;
+    min-height: 100%;
+    background-color: var(--menu-gray);
+}
+
+.main-menu li {
+    transition: transform 0.1s linear;
+}
+
+.main-menu li:hover {
+    cursor: pointer;
+    transform: scale(1.07);
+}
+
+.menu-item ul {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.menu-item {
+    display: flex;
+    height: 75px;
+    margin: 12px 10px;
+    background-color: var(--menu-item-purple);
+    border-radius: 5px;
+    align-items: center;
+    transition: background-color 0.1s linear;
+    /* justify-content: center; */
+}
+
+.menu-item:active {
+    background-color: rgba(256, 256, 256, 0.5);
+}
+
+
+/* adding icons to menu */
+
+.icon-laptop {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/3566/3566652.png');
+}
+
+.icon-cpu {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/1250/1250593.png');
+}
+
+.icon-gpu {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/100/100310.png');
+}
+
+.icon {
+    min-width: 35%;
+    min-height: 50px;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    margin: auto;
+}
+
+.menu-title {
+    font-size: 20px;
+    min-width: 65%;
+    padding-left: 5px;
+}
+
+
+/* every state is inside this div  */
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-width: calc(100vw - 300px);
+}
+
+
+/* Main part ends here  */
+
+
+/* Heading  */
+
+.component-title {
+    color: rgba(256, 256, 256, 0.9);
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    font-size: 3rem;
+}
+
+.middle-container {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    width: 95%;
+    margin: 0 5px 30px 5px;
+}
+
+
+/* controllers  */
+
+.controllers {
+    height: 90vh;
+    min-height: 99%;
+    width: 280px;
+    background-color: var(--light-gray);
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.controllers h2 {
+    color: rgba(256, 256, 256, 0.9);
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.category {
+    margin-bottom: 20px;
+}
+
+.slide {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide label {
+    padding-bottom: 5px;
+    font-size: 12px;
+    padding-left: 5px;
+    width: 100%;
+    user-select: none;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 90%;
+    height: 8px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 5px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--logo-pink);
+    cursor: pointer;
+}
+
+.brand-input {
+    user-select: none;
+    padding-left: 5px;
+    margin-left: 15px;
+    margin-top: 6px;
+}
+
+.category label {
+    user-select: none;
+}
+
+.brand-input:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.component-body {
+    /* background-color: var(--light-gray); */
+    width: 100%;
+}
+
+
+/* css for each item  */
+
+.device-card {
+    display: inline-block;
+    width: calc(15vw);
+    min-width: 220px;
+    background-color: var(--offer-purple);
+    margin: 5px 10px 20px 10px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    border-radius: 5px;
+    transition: transform 0.1s linear;
+}
+
+.device-card:hover {
+    transform: scale(1.05);
+}
+
+.device-card-top {
+    padding: 4px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.device-image {
+    background-image: url('https://global.aorus.com/upload/Product/F_20211026122289R8jZW_.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 20vw;
+    border-radius: 5px;
+}
+
+.device-card-top h2 {
+    padding-top: 10px;
+}
+
+.device-card-top h4 {
+    padding-bottom: 10px;
+}
+
+.device-card-bottom {
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: var(--dark-purple);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.device-card-bottom small {
+    text-decoration: line-through;
+    font-size: 13px;
+}
+
+.device-card-bottom p {
+    font-size: 18px;
+}
+
+.device-card-bottom i {
+    margin: 10px;
+    font-size: 2.5rem;
+    transition: transform 0.1s linear, color 0.1s linear;
+}
+
+.device-card-bottom i:hover {
+    transform: scale(1.3);
+}
+
+.device-card-bottom i:active {
+    color: black;
+}
+
+
+/* CSS for cart  */
+
+.cart-container {
+    position: absolute;
+    background-color: var(--shopping-cart-background);
+    z-index: 1;
+    width: 100vw;
+    height: 120%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.cart-top {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    /* padding-right: 15px; */
+}
+
+.cart-top i {
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+    margin-top: 30px;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: transform 0.1s linear, color 0.1s linear;
+}
+
+.cart-top i:hover {
+    transform: scale(1.2);
+}
+
+.cart-top i:active {
+    color: black;
+}
+
+.cart-top h1 {
+    margin-top: 40px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+.total {
+    background-color: var(--card-title-purple);
+    width: 100vw;
+    height: 3.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2rem;
+    color: black;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.cart-top hr {
+    width: 100vw;
+    height: 3px;
+    background-color: rgba(256, 256, 256, 0.7);
+    border-color: rgba(256, 256, 256, 0.7);
+    ;
+}
+
+.cart-body {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.cart-item {
+    background-color: var(--shopping-cart-item);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cart-image {
+    background-image: url('https://global.aorus.com/upload/Product/F_20211026122289R8jZW_.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 90px;
+    margin-left: 15px;
+}
+
+.cart-info {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding-left: 20px;
+}
+
+.cart-info p {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.increse-decrease-amount {
+    user-select: none;
+    width: 25%;
+    font-size: 1.5rem;
+}
+
+.increse-decrease-amount i {
+    font-size: 1rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: transform 0.1s linear, color 0.1s linear;
+    cursor: pointer;
+}
+
+.increse-decrease-amount i:hover {
+    transform: scale(1.5);
+}
+
+.increse-decrease-amount i:active {
+    color: black;
+}
+
+.item-price {
+    font-size: 2rem;
+    padding-right: 15px;
+    width: 35%;
+    text-align: right;
+}
+
+
+/* Cart css end  */

@@ -1,0 +1,225 @@
+{
+    "items": [{
+            "id": 1,
+            "name": "MSI GeForce RTX 3080 Ti SUPRIM X 12G",
+            "type": "Graphics Cards",
+            "brand": "MSI",
+            "discription": "Model Name GeForce RTX™ 3070 Ti SUPRIM 8G, Graphics Processing Unit NVIDIA® GeForce RTX™ 3070 Ti, Interface PCI Express® Gen 4, Cores 6144 Units, Core Clocks EXTREME Mode: 1845 MHz (MSI Center), GAMING Mode & SILENT Mode: 1830 MHz, Memory Speed 19 Gbps, Memory 8GB GDDR6X, Memory Bus 256-bit",
+            "image": "https://asset.msi.com/resize/image/global/product/product_162251660746b70dc7920c5df09efbbd425dc16b41.png62405b38c58fe0f07fcef2367d8a9ba1/380.png",
+            "price": 315000,
+            "offer": true
+        },
+        {
+            "id": 2,
+            "name": "MSI RX 6900 XT GAMING X TRIO 16G",
+            "type": "Graphics Cards",
+            "brand": "MSI",
+            "discription": "Model Name Radeon™ RX 6900 XT GAMING X TRIO 16G, Graphics Processing Unit Radeon™ RX 6900 XT, Interface PCI Express® Gen 4, Cores 5120 Units, Core Clocks Boost: Up to 2340 MHz / Game: Up to 2105 MHz, Memory Speed 16 Gbps, Memory 16GB GDDR6, Memory Bus 256-bit",
+            "image": "https://asset.msi.com/resize/image/global/product/product_1612246958fa75eb32b6ae31058dbd816d78fb3d0e.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png",
+            "price": 400000,
+            "offer": true
+        },
+
+        {
+            "id": 3,
+            "name": "ASUS DUAL RTX 2060 EVO 6GB",
+            "type": "Graphics Cards",
+            "brand": "Asus",
+            "discription": "Graphic Engine NVIDIA® GeForce RTX™ 2060, Bus Standard PCI Express 3.0, OpenGL OpenGL®4.6, Video Memory6GB GDDR6, Engine Clock OC Mode - GPU Boost Clock : 1710 MHz , GPU Base Clock : 1395 MHz, Gaming Mode (Default) - GPU Boost Clock : 1680 MHz , GPU Base Clock : 1365 MHz, CUDA Core 1920",
+            "image": "https://www.asus.com/media/global/gallery/xay6qsxcdxp30snn_setting_xxx_0_90_end_2000.png",
+            "price": 169000,
+            "offer": false
+        },
+
+        {
+            "id": 4,
+            "name": "GIGABYTE GEFORCE RTX 3080 GAMING OC 10G",
+            "type": "Graphics Cards",
+            "brand": "Gigabyte",
+            "discription": "Graphics Processing GeForce RTX™ 3080, Core Clock 1800 MHz (Reference Card: 1710 MHz), CUDA® Cores 8704, Memory Clock 19000 MHz, Memory Size 10 GB, Memory Type GDDR6X, Memory Bus 320 bit, Memory Bandwidth (GB/sec) 760 GB/s",
+            "image": "https://static.gigabyte.com/StaticFile/Image/Global/c35e0b0617fded6d6a8316badf3f21f2/Product/30854/png/1000",
+            "price": 340000,
+            "offer": false
+        },
+
+        {
+            "id": 5,
+            "name": "INTEL CORE I9-12900K",
+            "type": "Processors",
+            "brand": "Intel",
+            "discription": "3 Years Warranty, Total Cores 16, # of Performance-cores 8, # of Efficient-cores 8, Total Threads 24, Max Turbo Frequency 5.20 GHz, Intel® Turbo Boost Max Technology 3.0 Frequency 5.20 GHz, Performance-core Max Turbo Frequency 5.10 GHz",
+            "image": "https://www.autonetpc.com/wp-content/uploads/2021/10/Box_i9K_12th_T2_Special_Box_Ang01_Right_1280x1280.png",
+            "price": 239000,
+            "offer": true
+        },
+
+        {
+            "id": 6,
+            "name": "AMD RYZEN 9 5900X",
+            "type": "Processors",
+            "brand": "AMD",
+            "discription": "3 years Warranty, # of CPU Cores 12, # of Threads 24, Base Clock 3.7GHz, Max Boost Clock Up to 4.8GHz, Total L2 Cache 6MB, Total L3 Cache 64MB, Unlocked Yes",
+            "image": "https://www.ubuy.com.lk/productimg/?image=aHR0cHM6Ly9pNS53YWxtYXJ0aW1hZ2VzLmNvbS9hc3IvZTVhOWI0MWYtMjJkNi00YjBlLWEyZDQtMmNmNTMwNGIzMDM5LjRmNjViYmRkODQ1NWIzNTNiNzkwZmRlNjNiOWRkMzA5LnBuZw.jpg",
+            "price": 150000,
+            "offer": true
+        },
+
+        {
+            "id": 7,
+            "name": "INTEL CORE I5-12400F",
+            "type": "Processors",
+            "brand": "Intel",
+            "discription": "3 Years Warranty, Total Cores 6, # of Performance-cores6, # of Efficient-cores0, Total Threads 12, Max Turbo Frequency 4.40 GHz, Performance-core Max Turbo Frequency 4.40 GHz, Performance-core Base Frequency 2.50 GHz, Cache 18 MB Intel® Smart Cache, Total L2 Cache7.5 MB, Processor Base Power 65 W, Maximum Turbo Power 117 W, Embedded Options Available No, Max Memory Size (dependent on memory type) 128 GB",
+            "image": "https://mdcomputers.lk/image/cache/data/PROCESSOR/51V+MalhMHL._AC_SY450_-removebg-preview-500x500.png",
+            "price": 69000,
+            "offer": false
+        },
+
+        {
+            "id": 8,
+            "name": "PALIT 1650 STORMX 4GB",
+            "type": "Graphics Cards",
+            "brand": "Palit",
+            "discription": "2 Years Warranty, Memory Amount 4G, Memory Interface 128bit, DRAM Type GDDR5, Graphics Clock 1485MHz, Boost Clock 1665 MHz, Memory Clock 8 Gbps, CUDA Cores 896, Memory Bandwidth (GB/sec), 128Microsoft DirectX 12 API with feature level 12_1",
+            "image": "https://smarttechnology-eg.com/1018-large_default/palit-geforce-gtx-1650-stormx-4gb-gddr5-vga.jpg",
+            "price": 65000,
+            "offer": false
+        },
+
+
+        {
+            "id": 9,
+            "name": "ASUS ROG MAXIMUS Z690 HERO",
+            "type": "Motherboards",
+            "brand": "Asus",
+            "discription": "3 years warranty,Socket LGA 1700 for 12th Gen Intel® Core™, Pentium® Gold and Celeron® processors, Intelligent Control: ASUS-exclusive tools including AI Overclocking, AI Cooling, AI Networking and Two-Way AI Noise-Cancelation for easy configuration, Robust Power Solution: 20+1 teamed power stages rated for 90 A, ProCool II power connectors, MicroFine alloy chokes and premium metallic capacitors, Optimized Thermal Design: Large VRM heatsinks plus integrated aluminum I/O cover, high-conductivity thermal pad, triple M.2 heatsinks and two M.2 backplates, plus ROG Water-Cooling Zone and ROG Hyper M.2 card with heatsinks.",
+            "image": "https://dlcdnwebimgs.asus.com/files/media/DD02632F-90B2-4E4B-80C7-B39D6A62E38D/v1/img/kv/pd.png",
+            "price": 214000,
+            "offer": false
+        },
+
+
+        {
+            "id": 10,
+            "name": "GIGABYTE B660M GAMING AC DDR4",
+            "type": "Motherboards",
+            "brand": "Gigabyte",
+            "discription": "3 years warranty, CPU LGA1700 socket: Support for 12th Generation Intel® Core™, Pentium® Gold and Celeron® Processors* ,L3 cache varies with CPU, Chipset Intel® B660 Express Chipset, Memory Support for DDR4 5333(O.C.)/ DDR4 5133(O.C.)/DDR4 5000(O.C.)/4933(O.C.)/4800(O.C.)/ 4700(O.C.)/ 4600(O.C.)/ 4500(O.C.)/ 4400(O.C.)/ 4300(O.C.)/4266(O.C.), 1 x D-Sub port, supporting a maximum resolution of 1920x1200@60 Hz, Realtek® Audio CODEC High Definition Audio",
+            "image": "https://static.gigabyte.com/StaticFile/Image/Global/c89dd06bd9128de65d95f4f9636101c4/Product/30518/png/1000",
+            "price": 35000,
+            "offer": false
+        },
+
+        {
+            "id": 11,
+            "name": "ASUS PRIME B660M-A WIFI DDR4",
+            "type": "Motherboards",
+            "brand": "Asus",
+            "discription": "3 Years Warranty, CPU Intel® Socket LGA1700 for 12th Gen Intel® Core™, Pentium® Gold and Celeron® Processors, Chipset Intel® B660 Chipset, Graphics 1 x DisplayPort, Storage Supports 2 x M.2 slots and 4 x SATA 6Gb/s ports, Wireless & Bluetooth 2x2 Wi-Fi 6 (802.11 a/b/g/n/ac/ax) ",
+            "image": "https://dlcdnwebimgs.asus.com/gain/4e1555fb-3c3a-48b7-9dee-cc1b1a49e938/",
+            "price": 49500,
+            "offer": true
+        },
+
+        {
+            "id": 12,
+            "name": "ASUS ROG STRIX Z690-A GAMING WIFI D4",
+            "type": "Motherboards",
+            "brand": "Asus",
+            "discription": "3 Years Warranty, Intel® LGA 1700 socket: Ready for 12th Gen Intel Core™, Pentium® Gold and Celeron® Processors ,Optimal Power Solution: 16+1 DrMos with ProCool II power connector, high-quality alloy chokes and durable capacitors to support multi-core processors, Optimized Thermal Design: Integrated I/O cover and VRM heatsinks with high conductivity thermal pad, four onboard M.2 heatsinks and M.2 backplate for the M.2_1 slot, High-performance Networking: On-board Intel® WiFi 6 (802.11ax) and Intel® 2.5 Gb Ethernet with ASUS LANGuard",
+            "image": "https://dlcdnwebimgs.asus.com/files/media/C3665420-F5C6-4AE4-A2AB-A8E31A727901/v1/img/kv/ROG-Strix-Z690-A-Gaming.png",
+            "price": 145000,
+            "offer": false
+        },
+
+        {
+            "id": 13,
+            "name": "MSI B450 GAMING PLUS MAX",
+            "type": "Motherboards",
+            "brand": "MSI",
+            "discription": "3 years warranty, Satisfying gamers with what they really need, B450 GAMING PLUS MAX is equipped with Core boost, Turbo M.2, DDR4 Boost, USB 3.2 Gen2 Connector, Model Name B450 GAMING PLUS MAX, CPU Support Supports 1st, 2nd and 3rd Gen AMD Ryzen™ / Ryzen™ with Radeon™ Vega Graphics, Desktop Processors for Socket AM4, CPU Socket Socket AM4, Chipset AMD® B450 Chipset, Graphics Interface 1 x PCI-E 3.0 x16 slot + 1 x PCI-E 2.0 x16 slot",
+            "image": "https://asset.msi.com/resize/image/global/product/product_3_20190716132640_5d2d601054421.png62405b38c58fe0f07fcef2367d8a9ba1/600.png",
+            "price": 43000,
+            "offer": true
+        },
+
+        {
+            "id": 14,
+            "name": "MSI B560M-A PRO",
+            "type": "Motherboards",
+            "brand": "MSI",
+            "discription": "3 years warranty, Turbo M.2, DDR4 Boost, USB 3.2 Gen2 Connector, Model Name B450 GAMING PLUS MAX, CPU Support Supports 1st, 2nd and 3rd Gen AMD Ryzen™ / Ryzen™ with Radeon™ Vega Graphics, Desktop Processors for Socket AM4, CPU Socket Socket AM4, Chipset AMD® B450 Chipset, Graphics Interface 1 x PCI-E 3.0 x16 slot + 1 x PCI-E 2.0 x16 slot",
+            "image": "https://asset.msi.com/resize/image/global/product/product_161535328869abb03893abc2e0301da1db74286452.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png",
+            "price": 24500,
+            "offer": true
+        },
+
+        {
+            "id": 15,
+            "name": "GALAX B550M-EX",
+            "type": "Motherboards",
+            "brand": "Galax",
+            "discription": "3 years warranty, Socket AMD AM4 Ryzen, CPU chipset： AMD B550, CPU： AMD AM4 Ryzen, Memory： 4 x DIMM DDR4 2133-3600MHz Max 128GB, Expansion slot ： 1×PCI-E 3.0 ×16(× 1bandwith) 1×PCI-E 3.0 × 1, Storage ： 6× SATA 6Gb/s ports, M.2 PCIe Gen4×4 Max 64Gbps, Display：DP+HDMI, USB： 8x USB 3.2 (2 Gen2 and 4 Gen1 in I/O 6x USB 2.0 (2 in I/O), Audio： Realtek® ALC892 Codec, Lan： 1000Mbps",
+            "image": "https://www.galax.com/media/catalog/product/cache/14/image/500x500/9df78eab33525d08d6e5fb8d27136e95/b/o/box_p_3.png",
+            "price": 29500,
+            "offer": true
+        },
+
+        {
+            "id": 16,
+            "name": "GIGABYTE GEFORCE RTX 2060 6GB",
+            "type": "Graphics Cards",
+            "brand": "Gigabyte",
+            "discription": "3 Years Warranty, Graphics Processing GeForce RTX™ 2060, Core Clock 1680 MHz, RTX-OPS 36, CUDA® Cores 1920, Memory Clock 14000 MHz, Memory Size 6 GB, Memory Type GDDR6 Memory, Bus 192 bit, Memory Bandwidth (GB/sec) 336 GB/s",
+            "image": "https://static.gigabyte.com/StaticFile/Image/Global/f97860a83f75b4623c808116b4ac6a4e/Product/28522/png/500",
+            "price": 160000,
+            "offer": true
+        },
+
+        {
+            "id": 17,
+            "name": "AMD RYZEN 5 5600X",
+            "type": "Processors",
+            "brand": "AMD",
+            "discription": "3 Years Warranty, Specifications, # of CPU Cores 6, # of Threads 12, Base Clock 3.7GHz, Max Boost Clock Up to 4.6GHz, Total L2 Cache 3MB, Total L3 Cache 32MB, Unlocked Yes, CMOS TSMC 7nm FinFET, Package AM4",
+            "image": "https://www.ubuy.com.lk/productimg/?image=aHR0cHM6Ly9pNS53YWxtYXJ0aW1hZ2VzLmNvbS9hc3IvNTcwMGU2MmQtOWIyNi00M2I5LWI2OGMtY2ZiNjg2ZTI1MjQ0Ljg1OWEwNDVhOGI5ODEwMTViZjEzOGY2MzlhYTFlMjBmLnBuZw.jpg",
+            "price": 92000,
+            "offer": true
+        }
+
+
+
+
+
+    ],
+
+    "news": [{
+            "id": 1,
+            "title": "All New Intel 12th Gen Laptops",
+            "discription": "Demonstrating MSI’s determination and vision for the coming era of the metaverse, the new laptops are equipped with up to Intel® CoreTM i9 processors.",
+            "image": "https://gamerbraves.sgp1.cdn.digitaloceanspaces.com/2022/01/FeaturedImageMSIGamingMalaysia.jpg"
+        },
+
+        {
+            "id": 2,
+            "title": "iPhone 13 🍎",
+            "discription": "The iPhone 13 Pro and 13 Pro Max also have a new top storage option, 1TB, but the base option remains at 128GB, so those who needed more than that still have to spend extra. If you’re cool with the 128GB, then the prices start at the same spot as last year.",
+            "image": "https://fdn.gsmarena.com/imgroot/news/21/09/iphone-13-prices/-1220x526/gsmarena_000.jpg"
+        },
+
+        {
+            "id": 3,
+            "title": "NVIDIA GeForce RTX 3090",
+            "discription": "The Nvidia GeForce RTX 3090 is high-end desktop graphics card based on the Ampere generation. It uses the big GA102 chip and offers 10,496 shaders and 24 GB GDDR6X graphics memory.",
+            "image": "https://irendering.net/wp-content/uploads/2020/10/NVIDIA-RTX-3090-irender.jpg"
+        },
+
+        {
+            "id": 4,
+            "title": "God of War Ragnarok",
+            "discription": "God of War 5: Ragnarok has now been confirmed, and it will arrive far sooner than any of us ever expected. Sony is attempting to steal all of my money, and they are certainly succeeding.",
+            "image": "https://instantgamingreviews.com/wp-content/uploads/2021/06/God-of-War-Ragnarok-PS5-Review.png"
+        }
+    ]
+
+}
