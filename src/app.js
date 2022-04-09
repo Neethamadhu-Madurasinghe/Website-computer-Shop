@@ -7,7 +7,9 @@ class UI {
 
             offerContainerUI: '.offer-set',
             offerNavigationLeftUI: '.offer-left',
-            offerNavigationRightUI: '.offer-right'
+            offerNavigationRightUI: '.offer-right',
+
+            toastUI: '#toasts',
 
 
         }
@@ -152,6 +154,21 @@ class UI {
         }
     }
 
+    // make a notification
+    createNotification(message) {
+        const toast = document.createElement('div');
+        toast.classList.add('toast');
+        toast.innerText = message;
+        document.querySelector(this.uiElements.toastUI).appendChild(toast);
+        setTimeout(() => {
+            toast.style.opacity = 0;
+        }, 2000);
+        setTimeout(() => {
+            toast.remove();
+        }, 3000);
+    }
+
+
 
 
 
@@ -214,6 +231,9 @@ class APP {
 
                 // Updating the cart value
                 this.setCartValue();
+
+                // Make notification
+                this.ui.createNotification('Added to Cart');
             }
         });
 
