@@ -137,9 +137,11 @@ class UI {
     // set the next offer card visible 
     displayNextOfferCard() {
         const container = document.querySelector(this.uiElements.offerContainerUI);
-        if (this.offerSetPos < 100) {
-            this.offerSetPos += 20;
-            container.style.transform = `translateX(-${this.offerSetPos}%)`
+        console.log('fire');
+        // MATH 😒
+        if (this.offerSetPos < ((container.clientWidth - container.parentElement.clientWidth) / container.clientWidth) * 100) {
+            this.offerSetPos += 15;
+            container.style.transform = `translateX(-${this.offerSetPos}%)`;
         }
 
 
@@ -149,8 +151,8 @@ class UI {
     displayPrevioustOfferCard() {
         const container = document.querySelector(this.uiElements.offerContainerUI);
         if (this.offerSetPos > 0) {
-            this.offerSetPos -= 20;
-            container.style.transform = `translateX(-${this.offerSetPos}%)`
+            this.offerSetPos -= 15;
+            container.style.transform = `translateX(-${this.offerSetPos}%)`;
         }
     }
 
@@ -167,8 +169,6 @@ class UI {
             toast.remove();
         }, 3000);
     }
-
-
 
 
 

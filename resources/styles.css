@@ -116,24 +116,27 @@ body {
     background-color: var(--menu-gray);
     height: 100%;
     text-align: center;
-    transition: background-color 0.2s linear;
+    transition: background-color, 0.1s linear;
+    /* color: #d3d3d3; */
 }
 
 .cart-btn:hover {
     cursor: pointer;
     background-color: var(--cart-purple);
+    color: black;
 }
 
 .cart-btn i {
     font-size: 2rem;
-    color: black;
+    color: inherit;
+    transition: color, 0.1s linear;
 }
 
 .cart-btn p {
     font-size: 1.35rem;
     margin-right: 12px;
-    color: black;
-    font-weight: bolder;
+    color: inherit;
+    transition: color, 0.1s linear;
 }
 
 
